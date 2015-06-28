@@ -2,7 +2,7 @@
 
 
 
-class CSCfun {
+class CnStCt {
 
     function insertcountry() {
         if (isset($_POST['submit'])) {

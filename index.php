@@ -1,6 +1,6 @@
 <?php 
 include 'includes.php';
-echo General::curPageURL();
 
-
+$url = General::getPageURL();
+echo General::getPageTemplate($url);
 ?>

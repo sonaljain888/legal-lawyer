@@ -23,8 +23,7 @@ class Db {
         if (!isset(self::$connection)) {
             // Load configuration as an array. Use the actual location of your configuration file
             // Put the configuration file outside of the document root
-            $config = parse_ini_file('config.ini');
-            self::$connection = new mysqli('localhost', $config['username'], $config['password'], $config['dbname']);
+            self::$connection = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
         }
 
         // If connection was not successful, handle the error

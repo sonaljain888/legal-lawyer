@@ -1,7 +1,26 @@
 <?php
-print_r($_SERVER);
-define(SERVER_NAME, $_SERVER['HTTP_HOST']);
-define(SERVER_URL,"http://".SERVER_NAME);
-define()
+ini_set("display_errors", 1);
+/*
+ * WEB Configuration
+ */
+define("SERVER_NAME", $_SERVER['HTTP_HOST']);
+define("SERVER_URL","http://".SERVER_NAME);
+define("SITE_NAME","Legal Lawyer");
+define("WEB_FOLDER", $_SERVER["DOCUMENT_ROOT"]);
+define("TEMPLATE_FOLDER", WEB_FOLDER."/templates");
+define("USER_TEMPLATE_FOLDER", TEMPLATE_FOLDER."/user");
+define("ADMIN_TEMPLATE_FOLDER", TEMPLATE_FOLDER."/admin");
+define("TEMPLATE_URL", SERVER_URL."/templates");
+define("USER_TEMPLATE_URL", TEMPLATE_URL."/user");
+define("ADMIN_TEMPLATE_URL", TEMPLATE_URL."/admin");
+define("USER_CSS_URL", USER_TEMPLATE_URL."/css");
+define("USER_JS_URL", USER_TEMPLATE_URL."/js");
 
+/*
+ * DB Configuration
+ */
+define("DB_SERVER", "localhost");
+define("DB_USER", "root");
+define("DB_PASSWORD", "root");
+define("DB_NAME", "lawyerdemo");
 ?>
