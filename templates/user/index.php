@@ -19,7 +19,7 @@
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+                                <img src="<?=USER_IMG_URL?>/home/girl1.jpg" class="girl img-responsive" alt="" />
                             </div>
                         </div>
                         <div class="item">
@@ -30,8 +30,8 @@
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
-                                <!--<img src="images/home/pricing.png"  class="pricing" alt="" />-->
+                                <img src="<?=USER_IMG_URL?>/home/girl2.jpg" class="girl img-responsive" alt="" />
+                                <!--<img src="<?=USER_IMG_URL?>/home/pricing.png"  class="pricing" alt="" />-->
                             </div>
                         </div>
 
@@ -43,7 +43,7 @@
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
+                                <img src="<?=USER_IMG_URL?>/home/girl3.jpg" class="girl img-responsive" alt="" />
                             </div>
                         </div>
 
@@ -83,7 +83,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="images/home/gallery3.jpg" alt="" />
+                                        <img src="<?=USER_IMG_URL?>/home/gallery3.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
                                         <a href="profile_details" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Details</a>
@@ -96,7 +96,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="images/home/gallery4.jpg" alt="" />
+                                        <img src="<?=USER_IMG_URL?>/home/gallery4.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
                                         <a href="profile_details" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Details</a>
@@ -109,7 +109,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="images/home/gallery1.jpg" alt="" />
+                                        <img src="<?=USER_IMG_URL?>/home/gallery1.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
                                         <a href="profile_details" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Details</a>
@@ -122,7 +122,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="images/home/gallery2.jpg" alt="" />
+                                        <img src="<?=USER_IMG_URL?>/home/gallery2.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
                                         <a href="profile_details" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Details</a>

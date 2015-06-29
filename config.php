@@ -15,6 +15,7 @@ define("USER_TEMPLATE_URL", TEMPLATE_URL."/user");
 define("ADMIN_TEMPLATE_URL", TEMPLATE_URL."/admin");
 define("USER_CSS_URL", USER_TEMPLATE_URL."/css");
 define("USER_JS_URL", USER_TEMPLATE_URL."/js");
+define("USER_IMG_URL", USER_TEMPLATE_URL."/images");
 
 /*
  * DB Configuration
