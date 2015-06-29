@@ -55,6 +55,15 @@ class General {
     }
     
     public static function getPageTemplate($url){
+        $request= Request::getAllRequest();
+        switch ($request['type'])
+        {
+            case 'user':
+                $user=new User();
+                $user->$request['action']();
+                
+                break;
+        }
         $general = new General();
         $general->url = $url;
         return $general->setTempalte();

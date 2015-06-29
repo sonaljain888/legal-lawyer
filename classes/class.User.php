@@ -3,6 +3,33 @@
 
 
 class User {
+    
+    function login()
+    {
+        if(isset($_REQUEST["Login"]))
+	{
+            $db = new Db();
+            $db->connect();
+            $mailid = $_REQUEST["email"];
+            $pass = $_REQUEST["pass"];
+            $sql = mysql_query("select * from user where EmailId='$mailid' and Password='$pass'");
+            $data = mysql_fetch_array($sql);
+                if(mysql_num_rows($log)>0)
+                    {
+                        if($data["RoleId"]==1)
+                            {
+				$_SESSION["sid"] = $data["UserId"];
+				//@header("Location: userprofile.php");
+                            }
+					
+                        else
+		        {
+			        echo "invalid user";
+		        }
+                    }
+        
+        }
+    }
 
     function registration() {
         if (isset($_POST['submit'])) {

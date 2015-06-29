@@ -1,4 +1,5 @@
 <?php
+
 ini_set("display_errors", 1);
 /*
  * WEB Configuration
@@ -22,6 +23,6 @@ define("USER_IMG_URL", USER_TEMPLATE_URL."/images");
  */
 define("DB_SERVER", "localhost");
 define("DB_USER", "root");
-define("DB_PASSWORD", "root");
+define("DB_PASSWORD", "");
 define("DB_NAME", "lawyerdemo");
 ?>
