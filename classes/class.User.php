@@ -3,22 +3,24 @@
 
 
 class User {
-    
+    public $data=array();
     function login()
     {
+        
+        
         if(isset($_REQUEST["Login"]))
 	{
             $db = new Db();
             $db->connect();
-            $mailid = $_REQUEST["email"];
-            $pass = $_REQUEST["pass"];
+            $mailid = $this->data["request"]["email"];
+            $pass = $this->data["request"]["password"];
             $sql = mysql_query("select * from user where EmailId='$mailid' and Password='$pass'");
             $data = mysql_fetch_array($sql);
                 if(mysql_num_rows($log)>0)
                     {
                         if($data["RoleId"]==1)
                             {
-				$_SESSION["sid"] = $data["UserId"];
+				$_SESSION["id"] = $data["UserId"];
 				//@header("Location: userprofile.php");
                             }
 					
@@ -29,6 +31,10 @@ class User {
                     }
         
         }
+    }
+    public function set($key, $val)
+    {
+        $this->data[$key] = $val;
     }
 
     function registration() {
