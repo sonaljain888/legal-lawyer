@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Admin Portal</title>
     <!-- The styles -->
-    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
-    <script type="text/javascript" src="js/validation.js"></script>
+    <link href="<?=ADMIN_CSS_URL?>/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="<?=ADMIN_CSS_URL?>/login.css" rel="stylesheet">
+    <script type="text/javascript" src="<?=ADMIN_JS_URL?>/validation.js"></script>
     <!-- jQuery -->
 </head>
 
