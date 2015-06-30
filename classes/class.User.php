@@ -1,40 +1,52 @@
 <?php
 
-
-
 class User {
-    public $data=array();
-    function login()
-    {
-        
-        
-        if(isset($_REQUEST["Login"]))
-	{
-            $db = new Db();
-            $db->connect();
-            $mailid = $this->data["request"]["email"];
-            $pass = $this->data["request"]["password"];
-            $sql = mysql_query("select * from user where EmailId='$mailid' and Password='$pass'");
-            $data = mysql_fetch_array($sql);
-                if(mysql_num_rows($log)>0)
-                    {
-                        if($data["RoleId"]==1)
-                            {
-				$_SESSION["id"] = $data["UserId"];
-				//@header("Location: userprofile.php");
-                            }
-					
-                        else
-		        {
-			        echo "invalid user";
-		        }
-                    }
-        
-        }
-    }
-    public function set($key, $val)
-    {
+
+    public $data = array();
+
+    public function set($key, $val) {
         $this->data[$key] = $val;
+    }
+
+    function login() {
+        if (isset($this->data['request']) && isset($this->data["request"]['submit'])) {
+            if($this->checkUserEmail($this->data['request']['email'])){
+                $mailid = $db->quote($this->data['request']["email"]);
+                $pass = $db->quote($this->data['request']["password"]);
+                
+                $db = new Db();
+                $query = "select * from ".$this->tableName()." where EmailId=$mailid and Password=$pass";
+                $db->select($query);
+                
+            }
+        }
+        return false;
+    }
+
+    private function tableName() {
+        return "user";
+    }
+
+    public  function checkUserEmail($email) {
+        if (strlen($email)) {
+            if (!Validation::Email($email)) {
+                    Error::set(INVALID_EMAIL);
+            } else {
+                $db = new Db();
+                $email = $db->quote($email);
+                $query = "SELECT UserId FROM user WHERE EmailId = $email";
+                $row = $db->select($query);
+                if(!count($row)){
+                    Error::set(ACCOUNT_IS_NOT_EXIST);
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+        } else {
+            Error::set(INVALID_EMAIL_FORMAT);
+            return FALSE;
+        }
     }
 
     function registration() {
@@ -66,15 +78,6 @@ class User {
 
             @header('Location: ../lawyer/userRegistration.php');
         }
-    }
-
-    function fatchuser() {
-        $db = new Db();
-        $db->connect();
-        $sid = $_SESSION['id'];
-        $sql = mysql_query("Select * from user");
-        $result = mysql_fetch_array($sql);
-        return $result;
     }
 
     function userupdate() {
