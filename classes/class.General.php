@@ -38,6 +38,11 @@ class General {
         }
         $pageDetails = $page->getPageDetails();
         if(is_array($pageDetails) && count($pageDetails[0])){
+            
+            if($pageDetails[0]["page_status"]==1)
+            {
+                
+            }
             include ($templateFile);
         }else{
             header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
@@ -62,14 +67,44 @@ class General {
                 case 'user':
                     $user=new User();
                     $user->set("request", $request);
-                    $user->$request['action']();
+                    $result=$user->$request['action']();
+                    
+                   if($result && $request['action']=='login'){
+                       
+                       
+                       header("Location: ".SERVER_URL ."/user/profile");
+                       //echo "Location :".SERVER_URL ."/user/profile"; 
+//                         
+                   }
+                   else{
+                       header("Location: ".SERVER_URL ."/login");
+                       echo 'Please Registration First';
+                   }
+                   
                 break;
+               case 'registration':
+                    $user=new User();
+                    $user->set("request", $request);
+                    $user->$request['action']();
+                   if($request['action']=='registration'){
+                        header("Location: http://local.lawyer.com/user/profile");
+                        //echo 'Please login ';
+                   }
+                   else{
+                       header("Location: http://local.lawyer.com/login");
+                       echo 'Please Registration First';
+                   }
+                   
+                break; 
             }
         }
         $general = new General();
         $general->url = $url;
         return $general->setTempalte();
     }
+    
+    
+    
     
 }
 ?>

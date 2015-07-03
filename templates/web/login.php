@@ -1,3 +1,5 @@
+<?php echo Error::displayError();?>
+<?php //print_r($_SESSION);?>
 <section class="login-form">
 
     <div class="row">
@@ -37,13 +39,14 @@
                                             <td id="label">Email:</td>
                                             <td><input id="text"type="email" name="email" placeholder="Email"required=""/></td>
                                         </tr>
-                                        <tr>
-                                            <td id="label">Confirm Email:</td>
-                                            <td><input id="text"type="email" placeholder="Confirm Email"required=""/></td>
-                                        </tr>
+                                        
                                         <tr>
                                             <td id="label">Password:</td>
                                             <td><input id="text"type="password" name="password" placeholder="Password" required=""/></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="label">Confirm Password:</td>
+                                            <td><input id="text"type="password" placeholder="Confirm Password"required=""/></td>
                                         </tr>
                                         <tr>
                                             <td id="label">Mobile No:</td>

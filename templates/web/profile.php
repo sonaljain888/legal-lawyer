@@ -1,5 +1,5 @@
 
-	<?php include 'header.php';?>
+	<?php print_r ($_SESSION);?>
 	<section>
 		<div class="container">
 			<div class="row">

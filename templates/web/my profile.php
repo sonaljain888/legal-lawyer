@@ -1,11 +1,10 @@
 
 
 <!--/header-->
-	<?php include 'header.php';?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php include 'sitebar.php';?>
+				<?php //include 'sitebar.php';?>
 				<div class="col-sm-9 padding-right">
 					
 					
@@ -40,7 +39,7 @@
                    <tr> <td style=" width:100px;color:black;">category</td><td style=" width:150px;color: black;"></td> </tr>
                  <tr rowspan="2"><td colspan="2"style=" width:250px;">
                          <!--<a href="delete?id=//<?php // echo $rows['id']; ?>"class="btn btn-default" name="delete" onClick="return confirm('Are you sure want to delete record')">Delete</a>-->
-                <a href="update_profile?id=" class="btn btn-default" style="background:red;color: white; " name="edit">Edit</a>
+                <a href="" class="btn btn-default" style="background:red;color: white; " name="edit">Edit</a>
                </td></tr>
               
             </tr>
@@ -61,6 +60,6 @@
 			</div>
 		</div>
 	</section>
-	<?php include 'footer.php';?>
+
 	<!--/Footer-->
 	

@@ -28,4 +28,20 @@ class Error {
     public static function get(){
         return Session::read($key);
     }
+    
+    public static function displayError()
+    {
+        if(!Session::read("error")){
+            return FALSE;
+        }
+       $err= Session::read("error");
+       Session::delete("error");
+       $output=NULL;
+       
+       foreach ($err as $val){
+           
+            $output.="<div>".$val."</div>";
+    }
+    return $output;
+}
 }
