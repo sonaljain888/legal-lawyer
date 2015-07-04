@@ -19,11 +19,11 @@
         width: 160px;
     }
 
-    .product-information span span{
+    .lawyer-information span span{
         width: 100%;
     }
 
-    #similar-product .carousel-inner .item img{
+    #similar-lawyer .carousel-inner .item img{
         width: 65px;
     }
 
@@ -82,17 +82,17 @@
         width: 40%;
     }
 
-    #similar-product .carousel-inner .item img{
+    #similar-lawyer .carousel-inner .item img{
         width: 60px;
         margin-left: 0;
     }
 
-    .product-information span span{
+    .lawyer-information span span{
         display: block;
         width: 100%;
     }
 
-    .product-information .cart{
+    .lawyer-information .cart{
         margin-left: 0;
         margin-top: 15px;
     }
@@ -264,11 +264,11 @@
 
     }
 
-    .product-information span {
+    .lawyer-information span {
         display: block;
     }
 
-    #similar-product {
+    #similar-lawyer {
         margin-bottom: 40px;
     }
 
@@ -459,11 +459,11 @@
         float: none;
     }
 
-    #similar-product .carousel-inner .item img{
+    #similar-lawyer .carousel-inner .item img{
         margin-left: 4px;
     }
 
-    .product-information{
+    .lawyer-information{
         margin-top: 40px;
     }
 
@@ -516,12 +516,12 @@
         margin-bottom: 10px;
     }
 
-    .product-information{
+    .lawyer-information{
         padding-left: 0;
         text-align: center;
     }
 
-    .product-information span span{
+    .lawyer-information span span{
         float: none;
     }
 

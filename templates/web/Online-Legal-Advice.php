@@ -7,13 +7,11 @@
 					
                                 
 					
-					<div class="category-tab shop-details-tab"><!--category-tab-->
+					<div class="category-tab lawyer-details-tab"><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
-								<!--<li><a href="#details" data-toggle="tab">Time line</a></li>-->
 								<li class="active"><a href="#reviews" data-toggle="tab" align="center">Online-Legal-Advice</a></li>
-<!--                                                                <li><a href="#companyprofile" data-toggle="tab">More</a></li>-->
-								<!--<li><a href="#tag" data-toggle="tab">Tag</a></li>-->
+
 							</ul>
 						</div>
 					
@@ -53,7 +51,7 @@
                             </tr>
                             <tr hidden="">
                                 <td id="first_td"> Status : </td>
-                                <td><input type="text" name="isactive" value="1" id="second_td" placeholder=""/></td>
+                                <td><input type="text" name="isactive" value="" id="second_td" placeholder=""/></td>
                             </tr>
                             
 
@@ -63,14 +61,14 @@
                         </table>
                     </form>
                          
-                                            <a href="#"><img src="images/home/disclaimer.png" alt="disclaimer" width="30" height="30">Disclaimer</a> 
-                                            <a href="#"><img src="images/home/privacy.png" alt="privacy" width="30" height="30">Need More Privacy?</a>
-                                            <a href="#"><img src="images/home/help.png" alt="help" width="30" height="30">&nbsp;Need Help?</a>
+                                            <a href="#"><img src="" width="30" height="30">Disclaimer</a> 
+                                            <a href="#"><img src="" alt="" width="30" height="30">Need More Privacy?</a>
+                                            <a href="#"><img src="" alt="help" width="30" height="30">&nbsp;Need Help?</a>
                                             <p><b>Note : </b>Enter the characters in the box below Enter the characters in the box below Enter the characters in the box below Enter the characters in the box below Enter the characters in the box below Enter the characters in the box below. </p>
 				</div>
                                     
 			
 		</div>
 	</section>
-<?php include 'footer.php';?>		
+		
     <!--/Footer-->

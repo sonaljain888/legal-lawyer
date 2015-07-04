@@ -1,6 +1,5 @@
 
 	<!--/header-->
-	<?php include 'header.php';?>	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -10,13 +9,13 @@
 					<div class="category-tab" ><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
-								<li><a href="welcome">My Home</a></li>
-								<li class="active"><a href="account">My Account</a></li>
-								<li><a href="question">My Question</a></li>
-								<li><a href="lawyers">My Lawyer</a></li>
-								<li><a href="blog">My Blogs</a></li>
-                                                                <li><a href="my profile">My Profile</a></li>
-                                                                <li><a href="answers">Clients  Q/A</a></li>
+								<li><a href="">My Home</a></li>
+								<li class="active"><a href="">My Account</a></li>
+								<li><a href="">My Question</a></li>
+								<li><a href="">My Lawyer</a></li>
+								<li><a href="">My Blogs</a></li>
+                                                                <li><a href="">My Profile</a></li>
+                                                                <li><a href="">Clients  Q/A</a></li>
                                       
 							</ul>
 						</div>
@@ -25,7 +24,7 @@
                                     <div class="col-sm-12">
 							<ul class="nav nav-tabs" style="background: #40403E;">
 								<li class="active">
-                                                                    <a href="#details" data-toggle="tab">User Account</a>
+                                                                    <a href="" data-toggle="tab">User Account</a>
                                                                 </li>
 
 							</ul>
@@ -80,6 +79,5 @@
 			</div>
 		</div>
 	</section>
-	<?php include 'footer.php';?>
 	<!--/Footer-->
 	

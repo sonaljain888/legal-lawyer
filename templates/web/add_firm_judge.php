@@ -1,6 +1,5 @@
-<?php include 'header.php';?>	
-	<!--/header-->
-	<section>
+
+	<section class="login-form">
 		<div class="container">
 			<div class="row">
 				<?php include 'sitebar.php';?>
@@ -10,14 +9,14 @@
 					<div class="category-tab" ><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="user">My Home</a></li>
-								<li><a href="useraccount">My Account</a></li>
-								<li><a href="userquestion">My Question</a></li>
-								<li><a href="userlawyers">My Lawyer</a></li>
-								<li><a href="userblog">My Blogs</a></li>
-                                                                <li><a href="userprofile">My Profile</a></li>
-                                                                  <li><a href="#">Upcomming 1</a></li>
-                                       <li><a href="#">Upcomming 2</a></li>
+								<li class="active"><a href="">My Home</a></li>
+								<li><a href="">My Account</a></li>
+								<li><a href="">My Question</a></li>
+								<li><a href="">My Lawyer</a></li>
+								<li><a href="">My Blogs</a></li>
+                                                                <li><a href="">My Profile</a></li>
+                                                                  <li><a href="#">Upcoming 1</a></li>
+                                       <li><a href="#">Upcoming 2</a></li>
 							</ul>
 						</div>
                                             
@@ -25,12 +24,12 @@
                                     <div class="col-sm-12">
 							<ul class="nav nav-tabs" style="background: #40403E;">
 								<li class="active">
-                                                                    <a href="#details" data-toggle="tab">Add /Law Firm/Judge</a>
+                                                                    <a href="" data-toggle="tab">Add /Law Firm/Judge</a>
                                                                 </li>
 
 							</ul>
 						</div>
-					<form id="form_background" action="add_firm_judge" method="POST">
+					<form id="form_background" action="" method="POST">
                          
                         <table height="680" align="center" width="80%">
                             
@@ -115,5 +114,4 @@
 			</div>
 		</div>
 	</section>
-	<?php include 'footer.php';?>
 	<!--/Footer-->

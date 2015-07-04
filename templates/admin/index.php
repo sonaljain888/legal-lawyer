@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Admin Portal</title>
-    <!-- The styles -->
-    <link href="<?=ADMIN_CSS_URL?>/bootstrap-cerulean.min.css" rel="stylesheet">
-    <link href="<?=ADMIN_CSS_URL?>/login.css" rel="stylesheet">
-    <script type="text/javascript" src="<?=ADMIN_JS_URL?>/validation.js"></script>
-    <!-- jQuery -->
-</head>
 
-<body>
 <div class="ch-container">
     <div class="row">
         
@@ -26,28 +14,28 @@
             <div class="alert alert-info">
                 Please login with your Username and Password.
             </div>
-            <form class="form-horizontal" action="#" method="post">
+            
+            <form class="form-horizontal" name="login" action="login.php" method="post">
                 <fieldset>
-                    <span id="spnname" class="span"></span>
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                        <input type="text" id="txtname" class="form-control" placeholder="Username" onclick="document.getElementById('spnname').innerHTML='';">
+                        <input type="text" name="UserName" required="required" class="form-control" placeholder="Username">
                     </div>
                     <div class="clearfix"></div><br>
-                     <span id="spnpwd" class="span"></span>
+
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
-                        <input type="password" name="txtpwd" id="txtpwd" class="form-control" placeholder="Password" onclick="document.getElementById('spnpwd').innerHTML='';">
+                        <input type="password" name="Password" required="required" class="form-control" placeholder="Password">
                     </div>
                     <div class="clearfix"></div>
 
                     <div class="input-prepend">
-                        <label class="remember" for="remember"><input type="checkbox" id="remember" required=""> Remember me</label>
+                        <label class="remember" for="remember"><input type="checkbox" required="required" id="remember"> Remember me</label>
                     </div>
                     <div class="clearfix"></div>
 
                     <p class="center col-md-5">
-                        <button type="submit" onclick="return validate()" class="btn btn-primary">Login</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Login</button>
                     </p>
                 </fieldset>
             </form>
@@ -56,6 +44,4 @@
     </div><!--/row-->
 </div><!--/fluid-row-->
 
-</div><!--/.fluid-container-->
-</body>
-</html>
+</div>

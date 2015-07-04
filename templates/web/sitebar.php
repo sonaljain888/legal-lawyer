@@ -17,7 +17,7 @@
         </div><!--/brands_products-->
 
 
-        <div class="shipping text-center"><!--shipping-->
+        <div class="advertising text-center"><!--shipping-->
             <img src="<?=USER_IMG_URL?>/home/shipping.jpg" alt="" />
         </div><!--/shipping-->
 

@@ -80,8 +80,6 @@ return false;
 });
 });
 </script>
-	<?php include 'header.php';?>
-
 	<section>
 		<div class="container">
 			<div class="row">
@@ -96,13 +94,10 @@ return false;
                                                             <li style="padding-left: 5%;"><a href="" style="color: white"></a></li>
                                                                
                                                                 <li style="padding-left: 5%;"><a href="login" style="color: white">Login to Create Blogs</a></li>
-								<!--<li><a href="#sunglass" data-toggle="tab">Top Lawyers</a></li>-->
-<!--								<li><a href="#kids" data-toggle="tab">Kids</a></li>
-								<li><a href="#poloshirt" data-toggle="tab">Polo shirt</a></li>-->
 							</ul>
 						</div>
                                             <div class="tab-content" style="height: 100%;">
-							<div class="tab-pane fade active in" id="tshirt" >
+							<div class="tab-pane fade active in"  >
                                                              <h3 style="margin-left: 10%;">All Blogs</h3>
                                                             <table style="margin-left: 10%;width: 700px;">
                                                                 

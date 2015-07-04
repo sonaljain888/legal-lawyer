@@ -1,5 +1,5 @@
-<?php include 'header.php';?>	
-        <section>
+
+        <section class="login-form">
             <div class="container">
                 <div class="row">
 <?php include 'sitebar.php'; ?>
@@ -9,14 +9,14 @@
                         <div class="category-tab" ><!--category-tab-->
                             <div class="col-sm-12">
                                 <ul class="nav nav-tabs">
-                                    <li><a href="user">My Home</a></li>
-                                    <li><a href="useraccount">My Account</a></li>
-                                    <li><a href="userquestion">My Question</a></li>
-                                    <li><a href="userlawyers">My Lawyer</a></li>
-                                    <li><a href="userblog" class="active">My Blogs</a></li>
+                                    <li><a href="">My Home</a></li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">My Question</a></li>
+                                    <li><a href="">My Lawyer</a></li>
+                                    <li><a href="" class="active">My Blogs</a></li>
                                     <!--<li><a href="userprofile">My Profile</a></li>-->
-                                                     <li><a href="#">Upcomming 1</a></li>
-                                       <li><a href="#">Upcomming 2</a></li>
+                                                     <li><a href="#">Upcoming 1</a></li>
+                                       <li><a href="#">Upcoming 2</a></li>
                                 </ul>
                             </div>
 
@@ -24,7 +24,7 @@
                                 <div class="col-sm-12">
                                     <ul class="nav nav-tabs" style="background: #40403E;">
                                         <li class="active">
-                                            <a href="#details" data-toggle="tab">Create a Blog</a>
+                                            <a href="" data-toggle="tab">Create a Blog</a>
                                         </li>
 
                                     </ul>

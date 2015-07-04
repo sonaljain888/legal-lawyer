@@ -654,13 +654,13 @@ ul.sub-menu {
     right: 0;
 }
 
-.category-products {
+.category-lawyer {
     border: 1px solid #F7F7F0;
     margin-bottom: 35px;
     padding-bottom: 20px;
     padding-top: 15px;
 }
-.left-sidebar h2, .brands_products h2 {
+.left-sidebar h2, .brands_law h2 {
     color: #FE980F;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -707,7 +707,7 @@ h2.title:before{
     margin-left: -110px;
 }
 
-.category-products .panel {
+.category-lawyer .panel {
     background-color: #FFFFFF;
     border: 0px;
     border-radius: 0px;
@@ -715,14 +715,14 @@ h2.title:before{
     margin-bottom: 0px;
 }
 
-.category-products .panel-default .panel-heading {
+.category-lawyer .panel-default .panel-heading {
     background-color: #FFFFFF;
     border: 0 none;
     color: #FFFFFF;
     padding: 5px 20px;
 }
 
-.category-products .panel-default .panel-heading .panel-title a {
+.category-lawyer .panel-default .panel-heading .panel-title a {
     color: #696763;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -734,7 +734,7 @@ h2.title:before{
     border-top: 0 none;
 }
 
-.category-products .badge {
+.category-lawyer .badge {
     background:none;
     border-radius: 10px;
     color: #696763;
@@ -783,7 +783,7 @@ h2.title:before{
     color: #696763;
 }
 
-.shipping {
+.advertising {
     background-color: #F2F2F2;
     margin-top: 40px;
     overflow: hidden;
@@ -846,14 +846,14 @@ h2.title {
     position: relative;
 }
 
-.product-image-wrapper{
+.lawyer-image-wrapper{
     border:1px solid #86863F;
     border-radius: 28px;
     overflow: hidden;
     margin-bottom:30px;
 }
 
-.single-products {
+.single-lawyers {
     position: relative;
 }
 
@@ -863,13 +863,13 @@ h2.title {
     right: 0;
 }
 
-.productinfo h2{
+.lawyerinfo h2{
     color: #FE980F;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
-.product-overlay h2{
+.lawyer-overlay h2{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -877,22 +877,22 @@ h2.title {
 }
 
 
-.productinfo p{
+.lawyerinfo p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #696763;
 }
 
-.productinfo img{
+.lawyerinfo img{
     width: 40%;
 }
 
-.productinfo{
+.lawyerinfo{
     position:relative;
 }
 
-.product-overlay {
+.lawyer-overlay {
     background:#FE980F;
     top: 0;
     display: none;
@@ -904,13 +904,13 @@ h2.title {
     opacity:;
 }
 
-.single-products:hover .product-overlay {
+.single-lawyers:hover .lawyer-overlay {
     display:block;
     height:100%;
 }
 
 
-.product-overlay .overlay-content {
+.lawyer-overlay .overlay-content {
     bottom: 0;
     position: absolute;
     bottom: 0;
@@ -918,7 +918,7 @@ h2.title {
     width: 100%;
 }
 
-.product-overlay .add-to-cart {
+.lawyer-overlay .add-to-law {
     background:#fff;
     border: 0 none;
     border-radius: 0;
@@ -928,13 +928,13 @@ h2.title {
     margin-bottom: 25px;
 }
 
-.product-overlay .add-to-cart:hover {
+.lawyer-overlay .add-to-law:hover {
     background:#fff;
     color: #FE980F;
 }
 
 
-.product-overlay p{
+.lawyer-overlay p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -943,7 +943,7 @@ h2.title {
 
 
 
-.add-to-cart {
+.add-to-law {
     background: #F0F0E9;
     border: 0 none;
     border-radius: 38px;
@@ -953,7 +953,7 @@ h2.title {
     margin-bottom: 25px;
 }
 
-.add-to-cart:hover {
+.add-to-law:hover {
     background: #FE980F;
     border: 0 none;
     border-radius: 0;
@@ -964,11 +964,11 @@ h2.title {
     margin-bottom: 10px;
 }
 
-.add-to-cart i{
+.add-to-law i{
     margin-right:5px;
 }
 
-.add-to-cart:hover {
+.add-to-law:hover {
     background: #FE980F;
     color: #FFFFFF;
 }
@@ -1143,15 +1143,15 @@ h2.title {
 
 
 /*************************
-*******Product Details CSS******
+*******lawyer Details CSS******
 **************************/
 
-.product-details{
+.lawyer-details{
     overflow:hidden;
 }
 
 
-#similar-product {
+#similar-lawyer {
     margin-top: 40px;
 }
 
@@ -1161,7 +1161,7 @@ h2.title {
     padding-right: 25px;
 }
 
-.product-details {
+.lawyer-details {
     margin-bottom: 40px;
     overflow: hidden;
     margin-top: 10px;
@@ -1169,17 +1169,17 @@ h2.title {
 
 
 
-.view-product {
+.view-lawyer {
     position: relative;
 }
 
-.view-product img {
+.view-lawyer img {
     border: 1px solid #F7F7F0;
     height: 380px;
     width: 100%;
 }
 
-.view-product h3 {
+.view-lawyer h3 {
     background: #FE980F;
     bottom: 0;
     color: #FFFFFF;
@@ -1192,11 +1192,11 @@ h2.title {
     right: 0;
 }
 
-#similar-product .carousel-inner .item{
+#similar-lawyer .carousel-inner .item{
     padding-left:0px;
 }
 
-#similar-product .carousel-inner .item img {
+#similar-lawyer .carousel-inner .item img {
     display: inline-block;
     margin-left: 15px;
 }
@@ -1216,7 +1216,7 @@ h2.title {
     background:#ccccc6;
 }
 
-.product-information {
+.lawyer-information {
     border: 1px solid #F7F7F0;
     overflow: hidden;
     padding-bottom: 60px;
@@ -1231,26 +1231,26 @@ h2.title {
     left:0
 }
 
-.product-information h2 {
+.lawyer-information h2 {
     color: #363432;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 0;
 }
 
-.product-information p {
+.lawyer-information p {
     color: #696763;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5px;
 }
 
-.product-information span {
+.lawyer-information span {
     display: inline-block;
     margin-bottom: 8px;
     margin-top: 18px;
 }
 
-.product-information span span {
+.lawyer-information span span {
     color: #FE980F;
     float: left;
     font-family: 'Roboto', sans-serif;
@@ -1259,7 +1259,7 @@ h2.title {
     margin-right: 20px;
     margin-top: 0px;
 }
-.product-information span input {
+.lawyer-information span input {
     border: 1px solid #DEDEDC;
     color: #696763;
     font-family: 'Roboto', sans-serif;
@@ -1271,7 +1271,7 @@ h2.title {
     width: 50px;
 }
 
-.product-information span label {
+.lawyer-information span label {
     color: #696763;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -1627,7 +1627,7 @@ h2.title {
     font-size: 24px;
 }
 
-.cart_product {
+.cart_lawyer {
     display: block;
     margin: 15px -70px 10px 25px;
 }
@@ -1979,7 +1979,7 @@ h2.title {
 
 #cart_items .cart_info 
 .table.table-condensed.total-result 
-.shipping-cost {
+.advertising-cost {
     border-bottom: 1px solid #F7F7F0;
 }
 

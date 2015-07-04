@@ -1,4 +1,3 @@
-<?php include 'header.php';?>	
 <section>
             <div class="container">
                 <div class="row">
@@ -9,13 +8,13 @@
                         <div class="category-tab" ><!--category-tab-->
                             <div class="col-sm-12">
                                 <ul class="nav nav-tabs">
-                                    <li><a href="welcome.php">My Home</a></li>
-                                    <li><a href="account.php">My Account</a></li>
-                                    <li><a href="question.php">My Question</a></li>
-                                    <li><a href="my_lawyers.php">My Lawyer</a></li>
-                                    <li class="active"><a href="blog.php">My Blogs</a></li>
-                                    <li><a href="my profile.php">My Profile</a></li>
-                                    <li><a href="answers.php">Clients  Q/A</a></li>
+                                    <li><a href="">My Home</a></li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">My Question</a></li>
+                                    <li><a href="">My Lawyer</a></li>
+                                    <li class="active"><a href="">My Blogs</a></li>
+                                    <li><a href="">My Profile</a></li>
+                                    <li><a href="">Clients  Q/A</a></li>
                                 </ul>
                             </div>
 
@@ -23,18 +22,15 @@
                                 <div class="col-sm-12">
                                     <ul class="nav nav-tabs" style="background: #40403E;">
                                         <li class="active">
-                                            <a href="#details" data-toggle="tab">Create a Blog</a>
+                                            <a href="" data-toggle="tab">Create a Blog</a>
                                         </li>
 
                                     </ul>
                                 </div>
                                     <form id="form_background" action="" method="POST">
-                                        <?php //  echo "<font color = 'blue' size='4' style='margin-left:100px'>$msg</font>";?>
                                         <table height="700" align="center" width="60%">
                                             <tr>
-             <!--                                <td id="first_td">Email id : </td>-->
                                                 <td><input type="text" name="reg_id" value="" id="second_td"style="display: none;"/></td>
-
                                             </tr>
                                             <tr>
                                                 <td id="first_td"> Country Name : </td>
@@ -69,7 +65,8 @@
                                             </tr>
 
                                             <tr>
-                                                <td colspan="4" align="center"><input type="submit" value="Submit" name="submit" style="width:150px;background: red;height: 45px;color: white" />&nbsp;&nbsp;&nbsp;<a href="blog"><input type="button" value="Cancel" style="width:150px;background: gray;height: 45px;color: white" /></a></td>
+                                                <td colspan="4" align="center"><input type="submit" value="Submit" name="submit" style="width:150px;background: red;height: 45px;color: white" />
+                                                    &nbsp;&nbsp;&nbsp;<a href="blog"><input type="button" value="Cancel" style="width:150px;background: gray;height: 45px;color: white" /></a></td>
                                             </tr>
 
                                         </table>
@@ -90,6 +87,5 @@
             </div>
         </div>
     </section>
-<?php include 'footer.php'; ?>
     <!--/Footer-->
 
