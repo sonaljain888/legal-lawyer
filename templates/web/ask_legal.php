@@ -3,13 +3,10 @@
         <div class="row">
             <?php include 'sitebar.php'; ?>
             <div class="col-sm-9 padding-right">
-
-
                 <div class="category-tab" ><!--category-tab-->
                     <div class="col-sm-12">
                         <ul class="nav nav-tabs">
                             <li><a href="">My Home</a></li>
-                            <li><a href="">My Account</a></li>
                             <li class="active"><a href="">My Question</a></li>
                             <li><a href="">My Lawyer</a></li>
                             <li><a href="">My Blogs</a></li>
@@ -17,33 +14,32 @@
                             <li><a href="">Clients  Q/A</a></li>
                         </ul>
                     </div>
-
-                    <div style="color:#000; font-size:13px; font-weight:bold; margin-top:10%;  border:1px  dashed #CCC; padding:3px;">         
+                    <div id="askdiv">         
                         Fully Paid Questions can only do Reply, proceed with Pay Now button to continue. 
-                        <div style="margin-top: 5%; color: blue; text-align: left;">
-                            <a href="" style="font-family: 'Indie Flower', cursive;margin-left: 1%;"><img src="" width="80px" height="40px;"/></a> <a href="" style="font-family: 'Indie Flower', cursive;margin-left: 2%;">Why Paid Service?</a><br><br>
-
+                        <div id="askdiv1" >
+                            <a href="" id="aska" style="">
+                                <img src="" width="80px" height="40px;"/></a> 
+                            <a href="" id="askaa">Why Paid Service?</a>
+                            <br><br>
                             <table align="center" width="800">
-
                                 <tr>
                                     <td>Topic:</td>
                                 </tr>
-                                <tr style="float: left;color:#FE980F"><td><br><br><br>
-                                    <td style="color:blue;">Heading:</td></tr>
-                                <tr><td style="font-size: 15px; color: #000;margin-left: 10%;color:#FE980F"><br>
-                                        <?php //echo $query2['question'];?>
-                                <h style="color: #000; margin-top:10% ">Describe your Question/Problem:</h>
-
-                                <a href="" style="font-family: 'Indie Flower', cursive;margin-left: 2%;float: right"><img src="" width="80px" height="40px;"/></a> <a href="" style="font-family: 'Indie Flower', cursive;margin-left: 2%;float: right;margin-top: 1%;font-size: 15px;">Why Paid Service?</a><br><br>
+                                <tr id="altd"><td><br><br><br>
+                                    <td id="altdheading">Heading:</td></tr>
+                                <tr><td class="altdheading2"><br>
+                                <h id="hr">Describe your Question/Problem:</h>
+                                <a id="aska">
+                                    <img src="" width="80px" height="40px;"/></a>
+                                <a id="aska" href="" >Why Paid Service?</a>
+                                <br><br>
                                 </td></tr></table>
                         </div><!--/category-tab-->
-
-                        <p style="margin-top: 10%;color: black;">Ask your legal question( Average response time is 40 mins ) & start chatting with the lawyers. Answer will notify to your given email id/Phone. Please login to PathLegal and check your answer incase if you are not received an email notification. How does it work?
-                            No Answers yet <h style="color:blue;">Disclaimer</h></p>
+                        <p id="hr">Ask your legal question( Average response time is 40 mins ) & start chatting with the lawyers.
+                            Answer will notify to your given email id/Phone.Please login to PathLegal and check your answer incase 
+                            if you are not received an email notification. How does it work?
+                            No Answers yet <h id="altdheading">Disclaimer</h></p>
                     </div>
                 </div>
-
             </div>
             </section>
-
-            <!--/Footer-->

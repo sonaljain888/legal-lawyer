@@ -7,6 +7,7 @@
                     <div class="col-sm-12">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="">My Home</a></li>
+                            <li><a href="">My Account</a></li>
                             <li><a href="">My Question</a></li>
                             <li><a href="">My Lawyer</a></li>
                             <li><a href="">My Blogs</a></li>
@@ -15,16 +16,20 @@
                             <li><a href="#">Upcoming 2</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-9 padding-right"style="margin-top: 1%;">
+
+                    <div class="col-sm-9 padding-right">
                         <div class="col-sm-12">
-                            <ul class="nav nav-tabs" style="background: #40403E;">
+                            <ul class="nav nav-tabs">
                                 <li class="active">
                                     <a href="" data-toggle="tab">Add /Law Firm/Judge</a>
                                 </li>
+
                             </ul>
                         </div>
                         <form id="form_background" action="" method="POST">
+
                             <table height="680" align="center" width="80%">
+
                                 <tr>
                                     <td id="label">category:</td>
                                     <td><select id="text" name="lawyer_category" required="">
@@ -87,23 +92,15 @@
                                 </tr>
 
                                 <tr>
-                                    <td colspan="4" align="center"><input type="submit" value="Submit" name="submit" style="width:150px;background: red;height: 45px;color: white" />&nbsp;&nbsp;&nbsp;<a href="my profile.php"><input type="button" value="Cancel" style="width:150px;background: gray;height: 45px;color: white" /></a></td>
+                                    <td colspan="4" align="center"><input type="submit" value="Submit" name="submit" id="edituser" />&nbsp;&nbsp;&nbsp;
+                                        <a href="my profile.php"><input type="button" value="Cancel" id="editusercancle" /></a></td>
                                 </tr>
                             </table>
                         </form>	
-
-                    </div><!--/category-tab-->
-
-                    <!--/recommended_items-->
-
+                    </div>
                 </div>
-            </div><!--/category-tab-->
-
-            <?php // include 'include/recommended.php';?>
-            <!--/recommended_items-->
-
+            </div>
         </div>
     </div>
 </div>
 </section>
-<!--/Footer-->

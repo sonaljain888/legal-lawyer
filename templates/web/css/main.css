@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background:;
     position: relative;
     font-weight:400px;
 }
@@ -2521,5 +2520,301 @@ h2.title {
 .contact-info .social-networks ul li a:hover{
     color: #FE980F;
 }
-
-
+.col-sm-9
+{
+    margin-top: 1%;
+}
+.nav nav-tabs
+{
+    background: #40403E;
+}
+#col-sm-4_img
+{
+    height: 140px;
+    width: 150px;
+}
+#edituser
+{
+    background: red;
+    height: 45px;
+    color: white;
+}
+#editusercancle
+{
+    width:130px;
+    background: gray;
+    height: 45px;
+    color: white;
+}
+#actd
+{
+    color:#000;
+    font-weight: bold;
+}
+.btn btn-default
+{
+    background:red;
+    color: white; 
+    width:100px ;
+}
+#divoverflow
+{
+    width: 100%; 
+    overflow: hidden; 
+    overflow-y: scroll;
+}
+#tblover
+{
+    margin-left:5%;
+    width: 90%;
+}
+#anstr
+{
+    height: 150px;
+    border-top: 1px black dotted; 
+    margin-top: -5%;
+}
+#anstd
+{
+    color: #39568b;
+    font-weight: bold;
+}
+#askdiv
+{
+    color:#000; 
+    font-size:13px;
+    font-weight:bold;
+    margin-top:10%; 
+    border:1px  dashed #CCC;
+    padding:3px;
+}
+#askdiv1
+{
+    margin-top: 5%; 
+    color: blue;
+    text-align: left;
+}
+#aska
+{
+    font-family: 'Indie Flower', cursive;
+    margin-left: 1%;
+}
+#askaa
+{
+    font-family: 'Indie Flower', cursive;
+    margin-left: 2%;
+}
+#altd
+{
+    float: left; color:#FE980F
+}
+#altdheading
+{
+    color:blue;
+}
+.altdheading2
+{
+    font-size: 15px; 
+    color: #000;
+    margin-left: 10%;
+    color:#FE980F
+}
+.altdheading2 #hr
+{
+    color: #000;
+    margin-top:10%
+}
+#aska
+{
+   font-family: 'Indie Flower', cursive;
+   margin-left: 2%;
+   float: right
+}
+#askp
+{
+    
+}
+#first_td
+{
+  width: 25%;
+  text-align: right;
+}
+#second_td
+{
+   width: 80%;
+   height: 35px;
+}
+#teatarea_td
+{
+  width: 80%;
+  height: 200px;
+  border:1px #000 solid;
+}
+#documenth4
+{
+    color: #007053;
+}
+#documenttr
+{
+    border-bottom: 1px #000000 dotted;
+}
+#dispalyblog
+{
+    width: 100%;
+    overflow: hidden; 
+    overflow-y: scroll;
+    border-bottom:black;
+}
+#blogd_a
+{
+    margin-left: 40%;
+    color: blue;
+}
+#blogd_tr
+{
+    height: 150px;
+    border-top: 1px black dotted;
+}
+#view-btn
+{
+    background:red;
+    color: white;
+    float: right;
+    margin-right: 10%;
+    float:right
+}
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 550px;
+margin-top: -350px;
+/*margin: 0 auto;*/
+background: #f3f3f3;
+position: relative;
+z-index: 103;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 #p{
+clear: both;
+height: 500px;
+overflow: scroll;
+color: #555555;
+text-align: justify;
+}
+.cnt223 #p a{
+    
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+#blog-tbl
+{
+  border: 1px #000 solid;
+  overflow: scroll;
+  margin-left: 9%;
+  margin-top: 7%  
+}
+#blog-tr
+{
+    height: 110px;
+    border-top: 1px #000 dotted;
+    border-bottom:1px #000 dotted;
+    font-size: 24px;font-weight: bold;
+    color: #006699; 
+}
+#blogdelete-btn
+{
+    color: #0063DC;
+    font-family: 'Indie Flower', cursive;font-size: 25px;
+}
+#profile-image
+{
+    height: 140px;
+    width: 150px;
+}
+#li-margin-left
+{
+    margin-left: 15%;float:left;
+}
+#padding-left
+{
+    padding-left: 15%;
+}
+#docimage
+{
+    position:  absolute;
+    margin-left: 96%;
+    margin-top: -3%;
+}
+#submit-btn
+{
+    background: red;height: 45px;color: white ;
+}
+#cancel-btn
+{
+    width:130px;background: gray;height: 45px;color: white
+}
+#tr
+{
+    height: 150px;
+    border-top: 1px black dotted;
+}
+#divoverflow-ques
+{
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-bottom:black;
+}
+#div-contain-a-tab
+{
+    float:left;
+    width:300px;
+    margin-left: 4%;
+    border-bottom:black 1px dotted; 
+    cursor:pointer;
+}
+#float-left
+{
+   float:left; 
+}
+#viewques
+{
+    background:red;color: white;float: right;margin-right: 10%;float:right;
+}

@@ -96,10 +96,10 @@
                                             <td colspan="2" align="center">
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                              <input type="submit" value="Submit" name="submit" style="background: red;height: 45px;color: white " />
+                                              <input type="submit" value="Submit" name="submit" id="submit-btn"/>
                                                     </div>
                                                     <div class="col-sm-6">
-                                              <input type="button" value="Cancel" style="width:130px;background: gray;height: 45px;color: white" />  
+                                              <input type="button" value="Cancel" style="" id="cancel-btn" />  
                                                     </div>
                                                 </div>
                                             </td>

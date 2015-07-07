@@ -15,20 +15,20 @@
                             <li><a href="#">Upcomming 2</a></li>
                         </ul>
                     </div>
-                    <div id="divoverflow-ques">
-                        <div>
-                            <div id="div-contain-a-tab"><a href="">Ask Question</a></div>
-                            <div id="float-left"> <a href="">Recently Answered</a></div> </div>
+                    <div class="tab-content">
+                        <a href=""> Add /New/Blogs</a>
                         <table align="center" width="800">
-                            <tr><td></td></tr>
-                            <tr>
-                                <td></td>                               
-                                <td><a href=""><input type="button" name="button" value="view" id="viewques"/></a>
-                                    
-                                </td></tr>                            
-                        </table> 
+                            <tr ><td></td></tr>
+                            <tr id="tr">
+                                <td id="blogdelete-btn"></td>
+                                <td><a class="btn btn-danger" href="" name="delete" onClick="return confirm('Are you sure want to delete record')">
+                                        <i class="glyphicon glyphicon-trash icon-white"></i>Delete</a></td>
+                                <td><a href=""><input type="button" name="button" value="view"id="view-btn" /></a></td>
+                            </tr>  
+                        </table>
                     </div>
                 </div>
             </div>
-
             </section>
+
+

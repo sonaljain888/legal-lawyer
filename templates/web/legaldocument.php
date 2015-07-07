@@ -9,13 +9,13 @@
                     <div class="col-sm-12">
                         <ul class="nav nav-tabs">
 
-                            <li class="" style="padding-left: 15%;"><a href="" data-toggle="tab"></a></li>
+                            <li class="" id="padding-left"><a href="" data-toggle="tab"></a></li>
 
                         </ul>
                     </div>
-                    <div class="tab-content" style="height: 100%;">
-                        <div class="tab-pane fade active in" id="tshirt" >
-                            <table style="margin-left: 10%;float:left;">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in">
+                            <table id="li-margin-left">
 
                                 <tr>
                                     <td><img src="" name="" rel=""/>
@@ -25,35 +25,26 @@
 
                             </table>  
 
-                            <table  style="margin-left: 15%;float:left;">
+                            <table id="li-margin-left">
 
                                 <tr>
                                     <td><img src="" name="" rel=""/>
                                         <a href=""></a>
                                     </td>
                                 </tr>
-
                             </table> 
-
                             <table style="margin-left: 20%;float:left;">
-
                                 <tr>
                                     <td><img src="" name="" rel=""/>
                                         <a href=""></a>
                                     </td>
                                 </tr>
-
                             </table>  
-
-
                         </div>
                     </div>
                 </div><!--/category-tab-->
-
-
             </div>
         </div>
     </div>
 </section>
-<?php include 'footer.php'; ?>
-<!--/Footer-->
+
