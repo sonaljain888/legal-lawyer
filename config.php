@@ -8,6 +8,8 @@ define("SERVER_NAME", $_SERVER['HTTP_HOST']);
 define("SERVER_URL","http://".SERVER_NAME);
 define("SITE_NAME","Legal Lawyer");
 define("WEB_FOLDER", $_SERVER["DOCUMENT_ROOT"]);
+define("USER_PROFILE_IMAGE_FOLDER", WEB_FOLDER."/user-images");
+define("USER_PROFILE_IMAGE_URL", SERVER_URL."/user-images");
 define("TEMPLATE_FOLDER", WEB_FOLDER."/templates");
 define("USER_TEMPLATE_FOLDER", TEMPLATE_FOLDER."/web");
 define("ADMIN_TEMPLATE_FOLDER", TEMPLATE_FOLDER."/admin");

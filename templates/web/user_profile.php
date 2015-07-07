@@ -3,15 +3,14 @@
         <div class="row">
             <?php include 'sitebar.php'; ?>
             <div class="col-sm-9 padding-right">
-
                 <div class="lawyer-details"><!--lawyer-details-->
                     <div class="col-sm-5">
                         <div class="view-lawyer">
-                            <img src="images/home/seo_icon.jpg" alt="" style="height: 150px; width: 200px;" /><br>
-                            <a> Edit Image</a>
+                            <img src="<?=USER_PROFILE_IMAGE_URL?>/default.png" alt="" />
+                            <h3><a href="<?=SERVER_URL?>/user/editprofile" >Edit Profile</a></h3>
                         </div>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-sm-7">  
                         <div class="lawyerinfo">
                             <span>
                                 <button type="button" class="btn btn-fefault cart">
@@ -24,16 +23,20 @@
                                     Ask & Chat
                                 </button>
                             </span>
-                            <p><b>Area:</b> </p>
-                            <p><b>Experience:</b>  </p>
-                            <p><b>Education:</b> </p>
-                            <p><b>Practice Courts:</b>  </p>
-                            <p><b>Specialization:</b>  </p>
+                            <p><b>Area:</b> <?=$pageCnt["Location"]?>, <?=$pageCnt["City"]?><br/><?=$pageCnt["Address"]?></p>
+                            <p><b>Experience:</b> <?=$pageCnt["Experiance"]?> Years </p>
+                            <p><b>Education:</b> <?=$pageCnt["Education"]?></p>
+                            <p><b>Practice Courts:</b> <?=$pageCnt["PracticingCourt"]?> </p>
+                            <p><b>Specialization:</b>  <?=$pageCnt["Specialization"]?></p>
                         </div><!--/lawyer-information-->
                     </div>
                 </div><!--/lawyer-details-->
+
                 <div class="category-tab shop-details-tab"><!--category-tab-->
+
                     <div class="tab-content">
+
+
                         <div class="tab-pane fade" id="companyprofile" >
                             <div class="col-sm-3">
                                 <div class="lawyer-image-wrapper">
@@ -59,7 +62,10 @@
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                         <div class="tab-pane fade" id="tag" >
                             <div class="col-sm-3">
                                 <div class="lawyer-image-wrapper">
@@ -73,7 +79,11 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </div>
+
                         <div class="tab-pane fade active in" id="reviews" >
                             <div class="col-sm-12">
                                 <ul>
@@ -85,11 +95,9 @@
                                 <p><b>Write Your Review</b></p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-

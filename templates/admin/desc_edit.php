@@ -3,14 +3,6 @@
 
 <div class="ch-container">
     <div class="row">
-        
-        <!-- left menu starts -->
-       
-        <!--/span-->
-        <!-- left menu ends -->
-
-       
-
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
             <div>
@@ -49,7 +41,6 @@
                          
                     </select>
                    
-                    <!--<input type="text" value="" class="form-control" placeholder="Country" required="">-->
                 </div>
                                     
                             </td>
@@ -60,13 +51,11 @@
                         <tr>
                             <td colspan="2">
                                  <div class="input-group" style="width: 100%">
-                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>-->
                     <textarea  id="description" name="desc_top">
 				</textarea>
 		<script>
 			
 		</script>
-                    <!--<textarea class="form-control"name="description" description placeholder="Description" required=""></textarea>-->
                 </div>
                             </td>
                         </tr>
@@ -76,13 +65,11 @@
                          <tr>
                             <td colspan="2">
                                  <div class="input-group" style="width: 100%">
-                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>-->
                     <textarea  id="description" name="desc_bottom">
 			
 		</textarea>
 		<script>
 				</script>
-                    <!--<textarea class="form-control"name="description" description placeholder="Description" required=""></textarea>-->
                 </div>
                             </td>
                         </tr>

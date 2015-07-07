@@ -95,9 +95,30 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="shop-menu pull-right">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="<?=SERVER_URL?>/lawyer/registration"> Register Lawyer</a></li>
-                                    <li><a href="<?=SERVER_URL?>/login"><i class="fa fa-lock"></i> Login</a></li>
+                                <?php
+                                if(Session::read("access_type")){
+                                   $access_id = Session::read("access_type"); 
+                                }else{
+                                    $access_id = 0;
+                                }
+                                $access_type = Validation::getAccessType($access_id);
+                                $category_name = "Header";
+                                $menus = Menu::getMenus($access_type, $category_name);
+                                $subUrl = Menu::getMenuSubUrl($access_type);
+                                
+                                ?>
+                                <ul class="nav navbar-nav"> 
+                                    <?php
+                                    foreach($menus as $menu_key => $menu_value){
+                                        $class = "";
+                                        if(isset($pageDetails[0]["url"]) && $menu_value['url'] == $pageDetails[0]["url"]){
+                                            $class = 'class="active"'; 
+                                        }
+                                    ?>
+                                    <li><a href="<?=SERVER_URL?>/<?=$subUrl?><?=$menu_value['url']?>" <?=$class?> ><?=$menu_value['name']?></a></li>
+                                    <?php
+                                    }
+                                    ?>
                                 </ul>
                             </div>
                         </div>

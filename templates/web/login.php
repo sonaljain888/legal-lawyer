@@ -1,5 +1,4 @@
 <?php echo Error::displayError();?>
-<?php //print_r($_SESSION);?>
 <section class="login-form">
 
     <div class="row">

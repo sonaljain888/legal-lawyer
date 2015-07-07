@@ -47,23 +47,14 @@
     <tr>
         <td></td>
         <td class="center"></td>
-        <!--<td class="center"><img src="img/logo.png" name="logo" rel="logo"/></td>-->
         <td class="center">
             <span class="label-success label label-default"></span>
         </td>
         <td class="center">
-<!--            <a class="btn btn-success" href="#">
-                <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                View
-            </a>-->
            <a class="btn btn-info" href="">
                 <i class="glyphicon glyphicon-edit icon-white"></i>
                 Edit
             </a>
-<!--<a class="btn btn-danger" href="country-delete.php?id=<?php // echo $rows['id'];?>" onClick="return confirm('Are you sure want to delete record')">
-                <i class="glyphicon glyphicon-trash icon-white"></i>
-                Delete
-            </a>-->
         </td>
     </tr>
     
@@ -78,9 +69,5 @@
 
     <!-- content ends -->
     </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
 
-   
-
-</div><!--/.fluid-container-->
 <?php include 'footer.php';?>

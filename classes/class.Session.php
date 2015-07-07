@@ -160,4 +160,21 @@ class Session {
         return true;
     }
 
+    public static function isLogged(){
+        if (strlen(Session::read("email")) && strlen(Session::read("userid"))) {
+            return true;
+        }
+        return FALSE;
+    }
+    
+    public static function logOut(){
+        if (strlen(Session::read("email")) && strlen(Session::read("userid")) && strlen(Session::read("access_type"))) {
+            Session::delete("email");
+            Session::delete("userid");
+            Session::delete("access_type");
+            Session::destroy();
+        }
+        General::redirectUrl(SERVER_URL);
+        return true;
+    }
 }

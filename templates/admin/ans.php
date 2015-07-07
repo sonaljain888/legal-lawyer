@@ -64,11 +64,7 @@
     </div><!--/row-->
     <!-- content ends -->
     </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
 
-   
-
-</div><!--/.fluid-container-->
 
 <!-- external javascript -->
 

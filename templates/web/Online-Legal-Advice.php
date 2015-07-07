@@ -11,7 +11,6 @@
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#reviews" data-toggle="tab" align="center">Online-Legal-Advice</a></li>
-
 							</ul>
 						</div>
 					

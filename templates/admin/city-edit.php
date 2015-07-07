@@ -49,8 +49,6 @@
                         <option value=""</option>
                         
                     </select>
-                   
-                    <!--<input type="text" value="" class="form-control" placeholder="Country" required="">-->
                 </div>
                                     
                             </td>

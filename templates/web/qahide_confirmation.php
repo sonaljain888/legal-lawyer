@@ -27,13 +27,15 @@
                                 <p style="color:  #3e152b;text-align: right;">** Why would need payment to hide the question? The hide feature comes along with the paid advantage. Click here for detail. Also, legallawyer has to spend extra time/resources to hide 
                                     the question and we need to make a request to Google to remove the same link from their search.</p>
                             </div>
+
                         </div> 
+
                         <p style="margin-top: 10%;color: #000; margin-left:5%; ">Any question? Call us 00000000000 (Mon - Sat, 9AM - 5PM IST)</p>
+
                     </div>
                 </div>
 
             </div>
             </section>
-
 
 

@@ -24,12 +24,6 @@
         
     </div>
     <div class="box-content">
-        <!--<a href="b_cat_add.php" style="font-weight:  bold;">Add</a>-->
-<!--            <a class="btn btn-info" href="b_cat_add.php">
-                <i class="glyphicon glyphicon-edit icon-white"></i>
-                Add Data
-            </a><br/><br/>-->
-    <!--<div class="alert alert-info">For help with such table please check <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></div>-->
     <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>
     <tr>
@@ -54,14 +48,7 @@
         <td class="center"></td>
         <td class="center"></td>
          <td class="center"></td>
-<!--        <td class="center">
-            <span class="label-success label label-default"><?php // if($rows['isactive_b_cat']==1){ echo "Active";} else {echo "Not Active";} ?></span>
-        </td>-->
         <td class="center">
-<!--            <a class="btn btn-success" href="#">
-                <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                View
-            </a>-->
 <a class="btn btn-info" href="">
                 <i class="glyphicon glyphicon-edit icon-white"></i>
                 Edit
@@ -83,13 +70,4 @@
     </div><!--/row-->
     <!-- content ends -->
     </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
-
-   
-
-</div><!--/.fluid-container-->
-
-<!-- external javascript -->
-
-
 <?php include 'footer.php';?>

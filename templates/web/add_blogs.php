@@ -31,6 +31,7 @@
                                         <table height="700" align="center" width="60%">
                                             <tr>
                                                 <td><input type="text" name="reg_id" value="" id="second_td"style="display: none;"/></td>
+
                                             </tr>
                                             <tr>
                                                 <td id="first_td"> Country Name : </td>

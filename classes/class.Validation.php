@@ -39,7 +39,20 @@ class Validation {
     if (!preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8,20}$/',$pass))
         return FALSE;
     return TRUE;
+    }
+    
+    public static function getAccessType($id){
+        if($id){
+            $db = new Db();
+            $id = $db->quote($id);
+            $query = "SELECT * FROM access_type WHERE id = $id AND active = 1";
+            $row = $db->select($query);
+            if(strlen($row[0]['type'])){
+                return $row[0]['type'];
+            }
+        }
+        return "Public";
+    }
+    
+    
 }
-
-}
-?>
