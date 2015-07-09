@@ -23,12 +23,13 @@ class User {
                     } else if ($row[0]["IsActive"] == 0) {
                         Error::set(ACCOUNT_IS_BLOCKED);
                         return FALSE;
-                    } else {
+                    } else if($row[0]["IsActive"]==$row[0]["RoleId"]) {
                         Session::write("email", $row[0]["EmailId"]);
                         Session::write("userid", $row[0]["UserId"]);
                         Session::write("access_type",$row[0]["RoleId"]);
                         return TRUE;
                     }
+                    
                 }
             }
         }

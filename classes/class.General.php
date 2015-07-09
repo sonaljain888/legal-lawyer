@@ -111,14 +111,20 @@ class General {
                     } elseif ($result && $request['action'] == 'registration') {
                         $pageType = $page->getPageTypeUrl(Session::read("access_type"));
                         $r_url = SERVER_URL . "/$pageType/home";
-                    } else {
+                    } 
+                     elseif ($result && $request['action'] == 'adminlogin') {
+                        $pageType = $page->getPageTypeUrl(Session::read("access_type"));
+                        $r_url = SERVER_URL . "/$pageType/home";
+                    }
+
+                    else {
                         $r_url = SERVER_URL . "/login";
                     }
                     General::redirectUrl($r_url);
                     break;
             }
         }
-        $general = new General();
+        $general = new General();+
         $general->url = $url;
         return $general->setTempalte();
     }
