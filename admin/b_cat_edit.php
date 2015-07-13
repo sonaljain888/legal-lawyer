@@ -2,14 +2,6 @@
 <?php include 'sitebar.php';?>
 <div class="ch-container">
     <div class="row">
-        
-        <!-- left menu starts -->
-      
-        <!--/span-->
-        <!-- left menu ends -->
-
-       
-
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
             <div>

@@ -8,7 +8,6 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <!--<a href="#">Tables</a>-->
             </li>
         </ul>
     </div>
@@ -50,16 +49,9 @@
         <td class="center"></td>
         <td class="center"></td>
         <td class="center"></td>
-        <!--<td class="center"><?php // echo $rows['isactive']; ?></td>-->
-<!--        <td class="center">
-            <span class="label-success label label-default">Active</span>
-        </td>-->
+   
         <td class="center">
-<!--            <a class="btn btn-success" href="#">
-                <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                View
-            </a>-->
-           
+
             <a class="btn btn-danger" href="">
                 <i class="glyphicon glyphicon-trash icon-white"></i>
                 Delete

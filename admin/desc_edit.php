@@ -3,14 +3,6 @@
 
 <div class="ch-container">
     <div class="row">
-        
-        <!-- left menu starts -->
-       
-        <!--/span-->
-        <!-- left menu ends -->
-
-       
-
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
             <div>
@@ -49,7 +41,6 @@
                          
                     </select>
                    
-                    <!--<input type="text" value="" class="form-control" placeholder="Country" required="">-->
                 </div>
                                     
                             </td>
@@ -60,13 +51,11 @@
                         <tr>
                             <td colspan="2">
                                  <div class="input-group" style="width: 100%">
-                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>-->
                     <textarea  id="description" name="desc_top">
 				</textarea>
 		<script>
 			
 		</script>
-                    <!--<textarea class="form-control"name="description" description placeholder="Description" required=""></textarea>-->
                 </div>
                             </td>
                         </tr>
@@ -76,13 +65,11 @@
                          <tr>
                             <td colspan="2">
                                  <div class="input-group" style="width: 100%">
-                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>-->
                     <textarea  id="description" name="desc_bottom">
 			
 		</textarea>
 		<script>
 				</script>
-                    <!--<textarea class="form-control"name="description" description placeholder="Description" required=""></textarea>-->
                 </div>
                             </td>
                         </tr>
@@ -105,29 +92,7 @@
     </div><!--/#content.col-md-0-->
 </div><!--/fluid-row-->
 
-    <!-- Ad, you can remove it -->
    
-    <hr>
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h3>Settings</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Here settings can be configured...</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
-                </div>
-            </div>
-        </div>
-    </div>
    
 
 </div><!--/.fluid-container-->

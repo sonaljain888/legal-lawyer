@@ -15,24 +15,24 @@
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Manage Location</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="display_country.php"><span> Country</span></a></li>
-                                <li><a href="display_state.php"><span> State</span></a></li>
-                                <li><a href="display_city.php"><span> City</span></a></li>
+                                <li><a href="country.php"><span> Country</span></a></li>
+                                <li><a href="state.php"><span> State</span></a></li>
+                                <li><a href="city.php"><span> City</span></a></li>
                             </ul>
                         </li>
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Manage Menu</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="display_menu.php"><span> Menu</span></a></li>
-                                <li><a href="display_menucategory.php"><span> Menu Category</span></a></li>
+                                <li><a href="menu.php"><span> Menu</span></a></li>
+                                <li><a href="menu_category.php"><span> Menu Category</span></a></li>
                                
                             </ul>
                         </li>
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Manage Page</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="display_page.php"><span> Page</span></a></li>
-                                <li><a href="display_pagecategory.php"><span>Page Category</span></a></li>
+                                <li><a href="page.php"><span> Page</span></a></li>
+                                <li><a href="page_category.php"><span>Page Category</span></a></li>
                            </ul>
                         </li>
                         <li class="accordion">
@@ -76,8 +76,8 @@
                         </li>
                     </ul>
                     <label id="for-is-ajax" for="is-ajax">
-                        <!--<input id="is-ajax" type="checkbox"> Ajax on menu-->
                     </label>
                 </div>
             </div>
         </div>
+        

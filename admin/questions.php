@@ -90,7 +90,6 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <!--<a href="#">Tables</a>-->
             </li>
         </ul>
     </div>
@@ -130,10 +129,7 @@
                                     <span class="label-success label label-default"></span>
                                 </td>
                                 <td class="center">
-                                    <!--            <a class="btn btn-success" href="#">
-                                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                                    View
-                                                </a>-->
+                                 
                                     <a class="btn btn-info" href="">
                                         <i class="glyphicon glyphicon-edit icon-white"></i>
                                         Answer

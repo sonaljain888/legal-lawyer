@@ -10,7 +10,6 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <!--<a href="#">Tables</a>-->
             </li>
         </ul>
     </div>
@@ -26,8 +25,7 @@
         
     </div>
     <div class="box-content">
-        <!--<a href="" style="font-weight:  bold;">Add</a>-->
-    <!--<div class="alert alert-info">For help with such table please check <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></div>-->
+   
     <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>
     <tr>

@@ -1,4 +1,4 @@
 <?php 
 $conn=mysql_connect('localhost','root','');
-$db=mysql_select_db('impel_lawyer',$conn);
+$db=mysql_select_db('lawyerdemo',$conn);
 ?>
