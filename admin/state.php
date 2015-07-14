@@ -30,6 +30,7 @@
                             <tr>
                                 <th>Id</th>
                                 <th>State </th>
+                                <th>Country </th>
                                 <th>Status</th>
                                 <th>Actions</th>
                             </tr>
@@ -44,6 +45,7 @@
                                 <tr>
                                     <td><?php echo $row['id']; ?></td>
                                     <td class="center"><?php echo $row['name']; ?></td>
+                                    <td class="center"><?php echo $row['country_name']; ?></td>
                                     <td class="center">
                                         <span class="label-success label label-default"><?php if ($row['active'] == 1) {
                                 echo "Active";
