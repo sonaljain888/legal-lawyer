@@ -25,7 +25,7 @@ class City extends State {
         if(is_numeric($this->city_id)){
             $db = new Db();
             $id = $db->quote($this->city_id);
-            $query = "SELECT * FROM ".$this->tableName()." WHERE active = 1 AND id = ".$id;
+            $query = "SELECT * FROM ".$this->tableName()." WHERE  id = ".$id;
             return $db->select($query);
         }
         return false;
@@ -33,7 +33,7 @@ class City extends State {
     
     public function getAll() {
             $db = new Db();
-            $query = "SELECT t1.id, t2.name as state_name, t1.name, t1.active FROM ".$this->tableName()." t1 LEFT JOIN ".parent::tableName()." t2 on t2.id = t1.state_id AND t2.active = 1 WHERE t1.active = 1 ";
+            $query = "SELECT t1.id, t2.name as state_name, t1.name, t1.active FROM ".$this->tableName()." t1 LEFT JOIN ".parent::tableName()." t2 on t2.id = t1.state_id  ";
             return $db->select($query);
     }
     

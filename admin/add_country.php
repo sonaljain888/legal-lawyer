@@ -1,11 +1,14 @@
 <?php include 'admin-config.php';?>
 <?php
 if(strlen(Request::post("submit"))){
-    if(Request::get("id") == Request::post("country_id")){
-        $countryObj = new Country();
-    }else{
-        
-    }
+    $country_id = Request::post("country_id");
+    $country_name = Request::post("country_name");
+    $country_status = Validation::getStautsTinyVal(Request::post("active"));
+    $countryObj = new Country();
+    $countryObj->set("country_id", $country_id);
+    $countryObj->set("country_name", $country_name);
+    $countryObj->set("country_status", $country_status);
+    $countryObj->save();
 }
 ?>
 <?php include 'header.php'; ?>
@@ -50,7 +53,7 @@ if(strlen(Request::post("submit"))){
                                         <td><label class="control-label" for="selectError">Country</label></td>
                                         <td><div class="input-group" >
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="country"  value="<?php if(isset($row['name'])){echo $row['name'];}?>" class="form-control" placeholder="Country" required="required" >
+                                                <input type="text" name="country_name"  value="<?php if(isset($row['name'])){echo $row['name'];}?>" class="form-control" placeholder="Country" required="required" >
                                             </div>
                                         </td>
                                     </tr>

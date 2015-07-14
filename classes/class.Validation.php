@@ -60,4 +60,11 @@ class Validation {
         }
         return "In Active";
     }
+    
+    public static function getStautsTinyVal($name){
+        if($name == "on"){
+            return 1;
+        }
+        return 0;
+    }
 }
