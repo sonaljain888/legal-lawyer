@@ -43,7 +43,7 @@ class Menu {
             $db = new Db();
             $category_id = $db->quote($category_id);
             $access_id = $db->quote($access_id);
-            $query = "SELECT * FROM menu where category_id = $category_id AND access_type = $access_id AND is_active = 1 order by menu_order ASC";
+            $query = "SELECT * FROM menu where category_id = $category_id AND access_type = $access_id AND active = 1 order by menu_order ASC";
             return $db->select($query);
         }
         return false;
@@ -63,7 +63,7 @@ class Menu {
     private static function getCategoryId($category_name){
         $db = new Db();
         $category_name = $db->quote($category_name);
-        $query = "SELECT * FROM menu_category where name =  $category_name";
+        $query = "SELECT * FROM menu_category where name =  $category_name and active = 1";
         $row = $db->select($query);
         if(count($row)){
             return $row[0]['id'];
@@ -74,7 +74,7 @@ class Menu {
     public static function getMenuSubUrl($name){
         $db = new Db();
         $name = $db->quote($name);
-        $query = "SELECT * FROM page_category where name = $name";
+        $query = "SELECT * FROM page_category where name = $name and active = 1";
         $row = $db->select($query);
         if(count($row) && $row[0]["id"] > 1){
             return $row[0]['url']."/";

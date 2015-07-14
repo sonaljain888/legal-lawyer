@@ -23,7 +23,7 @@ class Page {
         if(isset($this->data['category_id'])){
             $where.= " AND category_id = ".$db->quote($this->data['category_id']) ;
         }
-        $query = "SELECT * FROM ".$this->pageTableName(). " WHERE status = 1  ".$where;
+        $query = "SELECT * FROM ".$this->pageTableName(). " WHERE active = 1  ".$where;
         return $db->select($query);
     }
     
@@ -42,14 +42,14 @@ class Page {
     public function getPageCategoryId($cat_name){
         $db = new Db();
         $cat_name = $db->quote($cat_name);
-        $query = "SELECT id FROM ".$this->pageCategoryTableName()." WHERE url = $cat_name and status = 1";
+        $query = "SELECT id FROM ".$this->pageCategoryTableName()." WHERE url = $cat_name and active = 1";
         return $db->select($query);
     }
     
      public function getPageTypeUrl($page_type_id){
         $db = new Db();
         $page_type_id = $db->quote($page_type_id);
-        $query = "SELECT url FROM ".$this->pageCategoryTableName()."  where id =  $page_type_id AND status = 1";
+        $query = "SELECT url FROM ".$this->pageCategoryTableName()."  where id =  $page_type_id AND active = 1";
         $row = $db->select($query);
         if(count($row)){
             return $row[0]['url'];

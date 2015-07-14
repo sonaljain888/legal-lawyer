@@ -54,5 +54,10 @@ class Validation {
         return "Public";
     }
     
-    
+    public static function getStautsName($val){
+        if($val){
+            return "Active";
+        }
+        return "In Active";
+    }
 }

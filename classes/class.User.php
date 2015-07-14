@@ -20,16 +20,15 @@ class User {
                     if (count($row) == 0) {
                         Error::set(ACCOUNT_IS_NOT_EXIST);
                         return FALSE;
-                    } else if ($row[0]["IsActive"] == 0) {
+                    } else if ($row[0]["active"] == 0) {
                         Error::set(ACCOUNT_IS_BLOCKED);
                         return FALSE;
-                    } else if($row[0]["IsActive"]==$row[0]["RoleId"]) {
+                    } else {
                         Session::write("email", $row[0]["EmailId"]);
                         Session::write("userid", $row[0]["UserId"]);
                         Session::write("access_type",$row[0]["RoleId"]);
                         return TRUE;
                     }
-                    
                 }
             }
         }

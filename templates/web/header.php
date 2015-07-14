@@ -38,13 +38,22 @@
                                             <ul class="dropdown-menu" style="min-width: 904px;left: -138px;">
                                                 <li>
                                                     <div class="tab-pane fade active in" id="tshirt" style="margin-left: 1%;" >
-                                                        <div class="col-sm-3" style="width:20%">
-                                                                <div class="single-products">
-                                                                    <div style="height: 61px;margin-top:20px;">
-                                                                        <img src="" name="logo" rel="logo" alt=""/>
-                                                                    </div>
+                                                        <?php
+                                                        $userMenus = Menu::getMenus(Validation::getAccessType(0), "Top User");
+                                                        if(count($userMenus)){
+                                                        foreach ($userMenus as $key => $data){
+                                                        ?>
+                                                        <div class="col-sm-3" >
+                                                            <div class="single-lawyers">
+                                                                <div class="lawyerinfo text-center">
+                                                                    <img  alt="<?= $data["name"] ?>" rel="<?= $data["name"] ?> logo" name="<?= $data["name"] ?>" src=""><br/>
+                                                                    <a class="btn btn-default"  href="<?= $data["url"] ?>"><?= $data["name"] ?> </a>
                                                                 </div>
+                                                            </div>
                                                         </div>
+                                                        <?php
+                                                        }}
+                                                        ?>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -58,10 +67,22 @@
                                             <ul class="dropdown-menu" style="min-width: 904px;left: -138px;">
                                                 <li>
                                                     <div class="tab-pane fade active in" id="tshirt" style="margin-left: 1%;">
-                                                        <div class="col-sm-3" style="width:20%">
-                                                                <div class="single-products">
+                                                        <?php
+                                                        $lawyerMenus = Menu::getMenus(Validation::getAccessType(0), "Top Lawyer");
+                                                        if(count($lawyerMenus)){
+                                                        foreach ($lawyerMenus as $key => $data){
+                                                        ?>
+                                                        <div class="col-sm-3" >
+                                                            <div class="single-lawyers">
+                                                                <div class="lawyerinfo text-center">
+                                                                    <img  alt="<?= $data["name"] ?>" rel="<?= $data["name"] ?> logo" name="<?= $data["name"] ?>" src=""><br/>
+                                                                    <a class="btn btn-default"  href="<?= $data["url"] ?>"><?= $data["name"] ?> </a>
                                                                 </div>
+                                                            </div>
                                                         </div>
+                                                        <?php
+                                                        }}
+                                                        ?>
                                                     </div>
                                                 </li>
                                             </ul>

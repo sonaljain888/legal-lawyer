@@ -9,7 +9,7 @@
                 <a href="#">Home</a>
             </li>
             <li>
-            
+                <!--<a href="#">Tables</a>-->
             </li>
         </ul>
     </div>
@@ -69,4 +69,7 @@
    
 
 </div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
 <?php include 'footer.php';?>

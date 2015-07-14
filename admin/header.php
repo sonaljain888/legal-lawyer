@@ -2,7 +2,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Header</title>
+    <title>Admin Portal</title>
      <?php include 'admin_csslinks.php';?>
   <?php include 'admin_jslinks.php';?>
    
