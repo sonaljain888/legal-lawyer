@@ -56,47 +56,4 @@ class Page {
         }
         return "";
     }
-      public $page_id = null;
-    public $name = null;
-      public $url = null;
-    public $top_description = null;
-    public $bottem_description = null;
-    public $Keyword = null;
-    public $title = null;
-    public $description = null;
-//    public $author = null;
-    public $date = null;
-    public $modified_by = null;
-    public $active = null;
-//    public $access_type = null;
-    public function get($key){
-        return $this->$key;
-    }
-    
-    public function setpage($key , $val){
-        $this->$key = $val;
-    }
-    
-    public function table(){
-        return "pages";
-    }
-    
-    public function getAllpage(){
-        $db = new Db();
-        $query = "SELECT * FROM ".$this->table();
-        return $db->select($query);
-    }
-    
-    public function getName(){
-        if(is_numeric($this->page_id)){
-            $db = new Db();
-            $page_id = $db->quote($this->page_id);
-            $query = "SELECT * FROM ".$this->table()." WHERE page_id = ".$page_id;
-            return $db->select($query);
-        }
-        return false;
-    }
-      public function save(){
-       
-    }
 }

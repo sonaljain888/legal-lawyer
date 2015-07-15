@@ -16,8 +16,7 @@ class State extends Country {
 //put your code here
     public $state_id = null;
     public $state_name = null;
-    public $state_status = null;
-    
+
     public function tableName(){
         return "states";
     }
@@ -39,22 +38,6 @@ class State extends Country {
     }
     
     public function save(){
-        if(is_numeric($this->state_id) && is_string($this->state_name)){
-            $db = new Db();
-            $id = $db->quote($this->state_id);
-            $country_id=$db->quote($this->country_id);
-            $name = $db->quote($this->state_name);
-            $active = $db->quote($this->state_status);
-            $query = "INSERT INTO ".$this->tableName()." (id, country_id, name, active) VALUES($id,$country_id, $name , $active) 
-                ON DUPLICATE KEY UPDATE    
-                name= $name,country_id=$country_id, active=$active";
-            if($db->query($query)){
-                if($db->affectedRows()){
-                    return true;
-                }
-            }
-        }
-        return false;
         
     }
 }

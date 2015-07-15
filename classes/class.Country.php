@@ -55,10 +55,10 @@ class Country {
             $query = "INSERT INTO ".$this->tableName()." (id, name, active) VALUES($id,$name , $active) 
                 ON DUPLICATE KEY UPDATE    
                 name= $name, active=$active";
-            if($db->query($query)){
-                if($db->affectedRows()){
-                    return true;
-                }
+            if(!$db->query($query)){
+                return $db->error();
+            }else{
+                return true;
             }
         }
         return false;
