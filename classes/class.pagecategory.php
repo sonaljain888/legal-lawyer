@@ -12,11 +12,12 @@
  *
  * @author anjain
  */
-class Country {
-//put your code here
-    public $country_id = null;
-    public $country_name = null;
-    public $country_status = null;
+class pagecategory
+{
+    public $id = null;
+    public $name = null;
+      public $url = null;
+    public $pagecategory_status = null;
 
     public function get($key){
         return $this->$key;
@@ -26,33 +27,33 @@ class Country {
         $this->$key = $val;
     }
     
-    public function tableName(){
-        return "country";
+    public function table(){
+        return "page_category";
     }
     
-    public function getAll(){
+    public function getAllpagecategory(){
         $db = new Db();
-        $query = "SELECT * FROM ".$this->tableName();
+        $query = "SELECT * FROM ".$this->table();
         return $db->select($query);
     }
     
     public function getName(){
-        if(is_numeric($this->country_id)){
+        if(is_numeric($this->id)){
             $db = new Db();
-            $id = $db->quote($this->country_id);
-            $query = "SELECT * FROM ".$this->tableName()." WHERE id = ".$id;
+            $id = $db->quote($this->id);
+            $query = "SELECT * FROM ".$this->table()." WHERE id = ".$id;
             return $db->select($query);
         }
         return false;
     }
-    
-    public function save(){
-        if(is_numeric($this->country_id) && is_string($this->country_name)){
+      public function save(){
+//        if(is_numeric($this->id) && is_string($this->name)){
             $db = new Db();
-            $id = $db->quote($this->country_id);
-            $name = $db->quote($this->country_name);
-            $active = $db->quote($this->country_status);
-            $query = "INSERT INTO ".$this->tableName()." (id, name, active) VALUES($id,$name , $active) 
+//            $id = $db->quote($this->id);
+            $name = $db->quote($this->name);
+             $url = $db->quote($this->url);
+            $active = $db->quote($this->pagecategory_status);
+            $query = "INSERT INTO ".$this->table()." (name,url, active) VALUES($name,$url , $active) 
                 ON DUPLICATE KEY UPDATE    
                 name= $name, active=$active";
             if($db->query($query)){
@@ -60,7 +61,9 @@ class Country {
                     return true;
                 }
             }
-        }
+//        }
         return false;
     }
 }
+
+?>

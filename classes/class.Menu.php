@@ -59,7 +59,6 @@ class Menu {
         }
         return 0;
     }
-    
     private static function getCategoryId($category_name){
         $db = new Db();
         $category_name = $db->quote($category_name);
