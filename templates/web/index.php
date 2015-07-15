@@ -80,9 +80,9 @@
 
                     <div class="tab-pane fade" id="sunglass" >
                         <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
+                            <div class="lawyer-image-wrapper">
+                                <div class="single-lawyers">
+                                    <div class="lawyerinfo text-center">
                                         <img src="<?=USER_IMG_URL?>/home/gallery3.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
@@ -93,9 +93,9 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
+                            <div class="lawyer-image-wrapper">
+                                <div class="single-lawyers">
+                                    <div class="lawyerinfo text-center">
                                         <img src="<?=USER_IMG_URL?>/home/gallery4.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
@@ -106,9 +106,9 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
+                            <div class="lawyer-image-wrapper">
+                                <div class="single-lawyers">
+                                    <div class="lawyerinfo text-center">
                                         <img src="<?=USER_IMG_URL?>/home/gallery1.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>
@@ -119,9 +119,9 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
+                            <div class="lawyer-image-wrapper">
+                                <div class="single-lawyers">
+                                    <div class="lawyerinfo text-center">
                                         <img src="<?=USER_IMG_URL?>/home/gallery2.jpg" alt="" />
                                         <h2>Title</h2>
                                         <p>Easy Polo Black Edition</p>

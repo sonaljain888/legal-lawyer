@@ -12,11 +12,10 @@
  *
  * @author anjain
  */
-class Menu {
+class Menu extends MenuCategory {
     public static function getMenus($access_type,$category_name){
         return self::_init($access_type,$category_name);
-    }
-    
+    }    
     private static function _init($access_type,$category_name){
         $access_id = $category_id = 0;
         if(!strlen($access_type)){
@@ -43,7 +42,7 @@ class Menu {
             $db = new Db();
             $category_id = $db->quote($category_id);
             $access_id = $db->quote($access_id);
-            $query = "SELECT * FROM menu where category_id = $category_id AND access_type = $access_id AND is_active = 1 order by menu_order ASC";
+            $query = "SELECT * FROM menu where category_id = $category_id AND access_type = $access_id AND active = 1 order by menu_order ASC";
             return $db->select($query);
         }
         return false;
@@ -59,26 +58,43 @@ class Menu {
         }
         return 0;
     }
-    
     private static function getCategoryId($category_name){
         $db = new Db();
         $category_name = $db->quote($category_name);
-        $query = "SELECT * FROM menu_category where name =  $category_name";
+        $query = "SELECT * FROM menu_category where name =  $category_name and active = 1";
         $row = $db->select($query);
         if(count($row)){
             return $row[0]['id'];
         }
         return 0;
-    }
-    
+    }   
     public static function getMenuSubUrl($name){
         $db = new Db();
         $name = $db->quote($name);
-        $query = "SELECT * FROM page_category where name = $name";
+        $query = "SELECT * FROM page_category where name = $name and active = 1";
         $row = $db->select($query);
         if(count($row) && $row[0]["id"] > 1){
             return $row[0]['url']."/";
         }
         return "";
     }
+    
+    
+    public $country_id = null;
+    public $country_name = null;
+    public $country_status = null;
+
+    public function get($key){
+        return $this->$key;
+    }
+    
+    public function set($key , $val){
+        $this->$key = $val;
+    }
+    
+    public function tableName(){
+        return "menu";
+    }
+    
+    
 }

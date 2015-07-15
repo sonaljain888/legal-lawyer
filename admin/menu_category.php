@@ -1,9 +1,6 @@
+<?php include 'admin-config.php';?>
 <?php include 'header.php';?>
 <?php include 'sitebar.php';?>
-
-      
-
-
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
                 <div>
@@ -41,21 +38,30 @@
     </tr>
     </thead>
     <tbody>
-       
+       <?php
+                            $countryObj = new MenuCategory();
+                            $rows = $countryObj->getAll();
+                            foreach ($rows as $row) {
+                                ?>
     <tr>
-        <td></td>
-        <td class="center"></td>
-        <td class="center">
-            <span class="label-success label label-default"></span>
-        </td>
-        <td class="center">
-           <a class="btn btn-info" href="">
-                <i class="glyphicon glyphicon-edit icon-white"></i>
-                Edit
-            </a>
+                                    <td><?php echo $row['id']; ?></td>
+                                    <td class="center"><?php echo $row['name']; ?></td>
+                                    <td class="center">
+                                        <span class="label-success label label-default"><?php if ($row['active'] == 1) {
+                                echo "Active";
+                            } else {
+                                echo "Not Active";
+                            } ?></span>
+                                    </td>
+                                    <td class="center">
+                                        <a class="btn btn-info" href="add_menucategory.php?id=<?=$row['id']?>">
+                                            <i class="glyphicon glyphicon-edit icon-white"></i>
+                                            Edit
+                                        </a>
 
-        </td>
-    </tr>
+                                    </td>
+                                </tr>
+                                <?php }?>
     
     </tbody>
     </table>
