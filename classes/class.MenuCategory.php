@@ -11,7 +11,7 @@
  * @author snjain
  */
 
-class MenuCategory{
+class MenuCategory extends Menu{
     //put your code here
     
     public $menucategory_id = null;

@@ -15,8 +15,7 @@
 class Menu {
     public static function getMenus($access_type,$category_name){
         return self::_init($access_type,$category_name);
-    }
-    
+    }    
     private static function _init($access_type,$category_name){
         $access_id = $category_id = 0;
         if(!strlen($access_type)){
@@ -68,8 +67,7 @@ class Menu {
             return $row[0]['id'];
         }
         return 0;
-    }
-    
+    }   
     public static function getMenuSubUrl($name){
         $db = new Db();
         $name = $db->quote($name);
@@ -80,4 +78,71 @@ class Menu {
         }
         return "";
     }
+    
+    
+    
+    public $menu_id = null;
+    public $menu_name= null;
+    public $category_id= null;
+    public $parent_id= null;
+   // public $image= null;
+    public $url= null;
+    public $access_type = null;
+    public $menu_order = null;
+    public $menu_status= null;
+    
+    public function tableName(){
+        return "menu";
+        
+    }
+    public function get($key){
+        return $this->$key;
+    }
+    
+    public function set($key , $val){
+        $this->$key = $val;
+    }
+    
+    public function getAll(){
+        $db= new Db();
+        $query="SELECT m . * , mc.name as category_name, at.type
+                    FROM ".$this->tableName()." m
+                    LEFT JOIN menu_category mc ON mc.id = m.category_id 
+                    LEFT JOIN access_type at on at.id = m.access_type"; 
+        return $db->select($query);
+    }
+    public function getName(){
+        if(is_numeric($this->menu_id)){
+            $db = new Db();
+            $id = $db->quote($this->menu_id);
+            $query = "SELECT * FROM ".$this->tableName()." WHERE id = ".$id;
+            return $db->select($query);
+        }
+        return false;
+    }
+    public function save(){
+        if(is_numeric($this->menu_id) && is_string($this->menu_name)){
+            $db = new Db();
+            $id = $db->quote($this->menu_id);
+            $name = $db->quote($this->menu_name);
+            $category_id = $db->quote($this->category_id);
+            $parent_id = $db->quote($this->parent_id);
+            $url= $db->quote($this->url);
+            $access_type = $db->quote($this->access_type);
+            $menu_order = $db->quote($this->menu_order);
+            $active = $db->quote($this->menu_status);
+            $query = "INSERT INTO ".$this->tableName()." (id, name, category_id, parent_id, url, active, access_type, menu_order) 
+                VALUES($id, $name, $category_id, $parent_id, $url, $active, $access_type, $menu_order)
+                ON DUPLICATE KEY UPDATE    
+                name= $name, category_id=$category_id, parent_id=$parent_id, url=$url, access_type=$access_type, menu_order=$menu_order, active=$active";
+             if($db->query($query)){
+                if($db->affectedRows()){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    
 }

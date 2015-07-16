@@ -1,6 +1,5 @@
 
 <?php include 'admin-config.php'; ?>
-
 <?php
 $city_id = $state_id = $city_name = $city_status = $error = "";
 if (strlen(Request::post("submit"))) {

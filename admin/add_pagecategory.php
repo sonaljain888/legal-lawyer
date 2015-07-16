@@ -20,13 +20,6 @@ if(strlen(Request::post("submit"))){
 <?php include 'sitebar.php'; ?>
 <div class="ch-container">
     <div class="row">
-        
-        <!-- left menu starts -->
-        <!--/span-->
-        <!-- left menu ends -->
-
-       
-
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
             <div>
@@ -91,8 +84,8 @@ if(strlen(Request::post("submit"))){
                                         ?>></td>
                         </tr>
                         <tr>
-                            <td  colspan="2"> <button  type="submit" name="submit" value="submit" style="background: black;margin-left: 20%; color: white" class="btn btn-default">Submit</button>&nbsp;&nbsp;&nbsp;<a href="page_category.php">
-                                    <button  type="button" style="background: black; color: white" class="btn btn-default">cancel</button></a></td>
+                            <td  colspan="2"> <button  type="submit" name="submit" value="submit"  class="btn btn-default">Submit</button>&nbsp;&nbsp;&nbsp;<a href="page_category.php">
+                                    <button  type="button"  class="btn btn-default">cancel</button></a></td>
                         </tr>
                     </table>
                 

@@ -12,7 +12,7 @@
  *
  * @author anjain
  */
-class pagecategory
+class PageCategory
 {
     public $id = null;
     public $name = null;
@@ -31,7 +31,7 @@ class pagecategory
         return "page_category";
     }
     
-    public function getAllpagecategory(){
+    public function getAll(){
         $db = new Db();
         $query = "SELECT * FROM ".$this->table();
         return $db->select($query);
