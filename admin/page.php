@@ -1,4 +1,4 @@
-<?php include 'admin-config.php';?>
+<?php include 'admin-config.php'; ?>
 <?php include 'header.php'; ?>
 <?php include 'sitebar.php'; ?>
 <div id="content" class="col-lg-10 col-sm-10">
@@ -43,48 +43,47 @@
                                 <th style="vertical-align: top">Date</th>
                                 <th style="vertical-align: top">Modified By</th>
                                 <th style="vertical-align: top">Status</th>
-                                <!--<th style="vertical-align: top">Access Type</th>-->
+                                <th style="vertical-align: top">Access Type</th>
                                 <th style="vertical-align: top">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
- <?php
-              $pageObj = new page();
-              $rows = $pageObj->getAllpage();
-              foreach ($rows as $row) {
-                       ?>
+                            <?php
+                            $pageObj = new page();
+                            $rows = $pageObj->getAll();
+                            foreach ($rows as $row) {
+                                ?>
 
-                            <tr>
-                                <td></td>
-                                <td class="center"><?php echo $row['page_id']; ?></td>
-                                <td class="center"><?php echo $row['name']; ?></td>
-                                <td class="center"><?php  echo $row['name']; ?></td>
-                                <td class="center"><?php echo $row['url']; ?></td>
-                                <td class="center"><?php echo $row['top_description']; ?></td>
-                                <td class="center"><?php echo $row['bottem_description']; ?></td>
-                                <td class="center"><?php echo $row['Keyword']; ?></td>
-                             <td class="center"><?php echo $row['title']; ?></td>
-                                <td class="center"><?php echo $row['description']; ?></td>
-                             <td class="center"><?php echo $row['author']; ?></td>
-                             <td class="center"><?php echo $row['date']; ?></td>
-                      <td class="center"><?php echo $row['modified_by']; ?></td>
-                                <td class="center"><?php echo $row['active']; ?></td>
-                                 <td class="center"><?php //echo $row['access_type']; ?></td>
-                                <td class="center">
-                                    <a class="btn btn-info" href="">
-                                        <i class="glyphicon glyphicon-edit icon-white"></i>
-                                        Edit
-                                    </a>
+                                <tr>
+                                    <td class="center"><?php echo $row['page_id']; ?></td>
+                                    <td class="center"><?php echo $row['name']; ?></td>
+                                    <td class="center"><?php echo $row['name']; ?></td>
+                                    <td class="center"><?php echo $row['url']; ?></td>
+                                    <td class="center"><?php echo $row['top_description']; ?></td>
+                                    <td class="center"><?php echo $row['bottem_description']; ?></td>
+                                    <td class="center"><?php echo $row['Keyword']; ?></td>
+                                    <td class="center"><?php echo $row['title']; ?></td>
+                                    <td class="center"><?php echo $row['description']; ?></td>
+                                    <td class="center"><?php echo $row['author']; ?></td>
+                                    <td class="center"><?php echo $row['date']; ?></td>
+                                    <td class="center"><?php echo $row['modified_by']; ?></td>
+                                    <td class="center"><?php echo $row['active']; ?></td>
+                                    <td class="center"><?php echo $row['access_type']; ?></td>
+                                    <td class="center">
+                                        <a class="btn btn-info" href="">
+                                            <i class="glyphicon glyphicon-edit icon-white"></i>
+                                            Edit
+                                        </a>
 
-                                    <a class="btn btn-danger" href="" onClick="return confirm('Are you sure want to delete record')">
-                                        <i class="glyphicon glyphicon-trash icon-white"></i>
-                                        Delete
-                                    </a>
-                                </td>
-                            </tr>
-<?php
-              }
-              ?>
+                                        <a class="btn btn-danger" href="" onClick="return confirm('Are you sure want to delete record')">
+                                            <i class="glyphicon glyphicon-trash icon-white"></i>
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>
@@ -103,10 +102,6 @@
 
     <!-- content ends -->
 </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
 
-
-
-</div><!--/.fluid-container-->
 
 <?php include 'footer.php'; ?>
